@@ -4,27 +4,21 @@
 
 int main()
 {
-    string player;
-    int choise = 0;
-    cout << "Enter a something..? " << endl;
-    cin >> player;
+    int a = 0;
 
-    cout << "Right? " << player << endl;
-    cout << "If: yes - enter 1. no - enter 2." << endl;
-    cin >> choise;
-
-    if (choise == 1)
+    switch (a)
     {
-        cout << "Congratulations!" << endl;
-        return 0;
+        case 0:
+            while (a < 1000)
+            a++;
+            cout << a << endl;
+            if (a == 1000)
+            {
+                cout << "Value is: " << a << endl;
+                a++;
+            }
+            break;
     }
-    else if (choise == 2)
-    {
-        cout << "Enter a something again: " << endl;
-        cin >> player;
-    }
-    else
-        cout << "Error value." << endl;
 
     return 0;
 }
